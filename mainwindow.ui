@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>726</width>
+    <height>364</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QCalendarWidget" name="calendarWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>411</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="gridVisible">
+     <bool>true</bool>
+    </property>
+    <property name="horizontalHeaderFormat">
+     <enum>QCalendarWidget::LongDayNames</enum>
+    </property>
+    <property name="verticalHeaderFormat">
+     <enum>QCalendarWidget::ISOWeekNumbers</enum>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>10</y>
+      <width>256</width>
+      <height>192</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="status">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>280</y>
+      <width>181</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>726</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menudodaj">
+    <property name="title">
+     <string>obaveze</string>
+    </property>
+    <addaction name="actiondodaj"/>
+    <addaction name="actionizmjena_"/>
+    <addaction name="actionBrisanje"/>
+   </widget>
+   <addaction name="menudodaj"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actiondodaj"/>
+   <addaction name="actionizmjena_"/>
+   <addaction name="actionBrisanje"/>
+  </widget>
+  <action name="actiondodaj">
+   <property name="icon">
+    <iconset resource="ikonice.qrc">
+     <normaloff>:/icons8-add-reminder-64.png</normaloff>:/icons8-add-reminder-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Dodaj</string>
+   </property>
+  </action>
+  <action name="actionizmjena_">
+   <property name="icon">
+    <iconset resource="ikonice.qrc">
+     <normaloff>:/icons8-change-64.png</normaloff>:/icons8-change-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Izmjena_</string>
+   </property>
+   <property name="toolTip">
+    <string>Izmjena_</string>
+   </property>
+  </action>
+  <action name="actionBrisanje">
+   <property name="icon">
+    <iconset resource="ikonice.qrc">
+     <normaloff>:/icons8-delete-bin-64.png</normaloff>:/icons8-delete-bin-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Brisanje</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="ikonice.qrc"/>
+ </resources>
+ <connections/>
+</ui>

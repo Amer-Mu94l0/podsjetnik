@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons8-add-column-64.png</file>
+        <file>icons8-add-reminder-64.png</file>
+        <file>icons8-change-64.png</file>
+        <file>icons8-delete-bin-64.png</file>
+    </qresource>
+</RCC>
